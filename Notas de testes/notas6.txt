@@ -1,0 +1,24 @@
+teste de request:
+
+são testes de integração(ou seja, que testam varios
+ componentes ao mesmo tempo) que realiza uma request completa
+ para um endpoint do seu projeto e verifica se ele
+ está respondendo adequadamente.
+
+ ex: 
+    describe 'get /home' do
+        it 'has the message 'hello world'' do
+            get home_path
+            expect(response.body).to include('hello world')
+        end
+    end
+----------------------------------------------------------------
+PQ USAR?:
+    para garantir que o endpoint, está devolvendo
+o status code e a resposta esperada.
+
+    para garantir que a integração entre os elementos
+(model, controller, rota, etc) necessarios para a resposta
+do endpoint estão funcionando adequadamente juntos.
+
+usar sempre que possivel(principalmente com uma api)
