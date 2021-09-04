@@ -1,0 +1,19 @@
+matchers true/false/nil
+
+    expect(valor).to be_truthy   #passa se n for false ou nil
+                     be_falsy    #passa se for falsy ou nil
+                     be true     #passa se for true
+                     be false    #passa se for false
+                     be_nil      #passa se for nil
+                 .to_not be_nil  #passa se não for nil  
+--------------------------------------------------------------
+matchers de erro
+    expect {..}.to raise_error  #passa se der erro kkkkk
+
+    expect {..}.to raise_error(ErrorClass)  #passa se der erro do tipo ErrorClass
+
+    expect {..}.to raise_error("message")  #passa se der erro com a msg "message"
+
+    expect {..}.to raise_error(ErrorClass, "message")  
+    #passa se der erro do tipo ErrorClass com a mensagem "message"
+----------------------------------------------------------------------------

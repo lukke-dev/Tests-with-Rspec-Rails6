@@ -1,0 +1,7 @@
+MODELS são classes ruby q se conectam as tabelas no Banco de dados, para 
+permitir facil manipulação delas
+-----------------------------------------------------
+add migration
+    rails g migration nomedamigration atributo:tipo 
+EX: rails g migration add_attr_to_user nickname:string kind:integer level:integer
+e dps rails db:migrate, para executar a migração

@@ -1,0 +1,15 @@
+diferença:
+    obj = 'a'
+    other = obj.dup
+
+    # passa se o valor for == ao esperado
+    to eq
+    obj = other -> true
+    1 == 1.0 -> true
+-------------------------------------------------------
+    #eql?
+    1.eql? 1.0 -> false
+-------------------------------------------------------
+    #equal? passa se for o mesmo objeto
+    obj.equal? other -> false
+    obj.equal? obj -> true

@@ -1,0 +1,17 @@
+matchers de comparação
+
+expect(valor).to be > x    #passa se o valor for maior que x
+                 be >= x   #passa se o valor for maior ou igual que x 
+                 be <= x   #passa se o valor for menor ou igual que x
+                 be < x    #passa se o valor for menor que x
+
+expect(valor).to match(/expressao/) #passa se o valor bater cm a Regex
+--------------------------------------------------------------------------
+
+matchers de classe e tipo
+    #passa se o obj for uma instancia de uma classe esperada
+    expect(hero).to be_an_instance_of(Hero)
+
+    #passa se o obj for do tipo esperado
+    obj = 'ola'
+    expect(obj). to be_a(String)

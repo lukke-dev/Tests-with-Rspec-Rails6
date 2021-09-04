@@ -1,0 +1,10 @@
+rails g model user  
+#comando normal, gera um model, a diferença é que qd temos
+ o rspec já instalado, ele cria o teste tbm
+-------------------------------------------------------
+rails g rspec:request User
+#pra qd queremos gerar apenas o teste de request(requisição)
+--------------------------------------------------------------
+rails g --help | grep rspec
+#mostra uma lista no console das opções de geradores de teste q temos
+----------------------------------------------------------------------

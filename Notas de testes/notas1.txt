@@ -1,0 +1,25 @@
+1º teste:
+    criamos uma instancia da classe e verificamos se tinha o atributo sword,
+e se o seu valor era 'sword'
+
+2º teste:
+    criamos uma instancia da classe e verificamos se tinha o atributo HP,
+e se o seu valor era maior que 1000.
+
+describe: usado para definir um grupo de exemplos(grupo de testes)
+
+context: agrupa testes associados ao mesmo contexto
+        não é obrigatorio, mas deixa mais legivel
+
+it: usado para definir um exemplo(um teste)
+
+expect: onde verificamos se determinada condição está acontecendo
+EX:    
+    describe Hero do
+        context 'quando está com a armadura' do
+            it 'tem 5000 de hp' do
+                hero = Hero.new
+                expect(hero.hp).to eq(5000)
+            end
+        end
+    end
