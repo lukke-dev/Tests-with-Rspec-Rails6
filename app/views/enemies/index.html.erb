@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-center text-white bg-dark">
+  <table>
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>power_base</th>
+        <th>power_step</th>
+        <th>level</th>
+        <th>kind</th>
+        <th>current_power</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @enemies.each do |enemy| %>
+        <tr>
+          <td>
+            <%= enemy.name %>
+          </td>
+          <td>
+            <%= enemy.power_base %>
+          </td>
+          <td>
+            <%= enemy.power_step %>
+          </td>
+          <td>
+            <%= enemy.level %>
+          </td>
+          <td>
+            <%= enemy.kind %>
+          </td>
+          <td>
+            <%= enemy.current_power %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
